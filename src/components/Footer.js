@@ -1,18 +1,28 @@
 import React from 'react'
 import {BottomNavigation, BottomNavigationAction} from '@material-ui/core'
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import YouTubeIcon from '@material-ui/icons/YouTube';
-
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 function Footer() {
     return (
-        <BottomNavigation >
-          <BottomNavigationAction color="red" label="Facebook" value="recents" icon={<FacebookIcon  style={{fill: "#3b5998"}}/>} />
-          <BottomNavigationAction label="Twitter" value="favorites" icon={<TwitterIcon  style={{fill: "#1DA1F2"}}/>} />
-          <BottomNavigationAction label="Instagram" value="nearby" icon={<InstagramIcon  style={{fill: " #C13584"}}/>} />
-          <BottomNavigationAction label="YouTube" value="folder" icon={<YouTubeIcon  style={{fill: "#c4302b"}}/>} />
+        <BottomNavigation>
+        <a
+          href="https://github.com/akshatjindal"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+            <BottomNavigationAction label="Github" icon={<GitHubIcon style={{fontSize:"large", fill: "#c4302b"}}/>} />
+        </a>
+        <div id="linkedin">
+            <a href="https://linkedin.com/in/jindalakshat/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+              <BottomNavigationAction icon={<LinkedInIcon style={{fill: "#0072b1"}}/>}/>
+            </a>
+          </div>
+
         </BottomNavigation>
+        
 )
 }
 
